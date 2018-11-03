@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_new_course"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Name"
+                android:textSize="15sp"
+                android:textColor="@color/font"
+                android:textStyle="bold"
+                /></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/cname_etx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter course Name"
+                android:textSize="13sp"
+                android:textColorHint="@color/font_faded"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration (in weeks)"
+                android:textSize="15sp"
+                android:textColor="@color/font"
+                android:textStyle="bold"
+                /></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/duration_etx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter no. of weeks"
+                android:textSize="13sp"
+                android:textColorHint="@color/font_faded"
+                android:inputType="number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty"
+                android:textSize="15sp"
+                android:textColor="@color/font"
+                android:textStyle="bold"
+                /></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/fname_etx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter name of faculty"
+                android:textSize="13sp"
+                android:textColorHint="@color/font_faded"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fee"
+                android:textSize="15sp"
+                android:textColor="@color/font"
+                android:textStyle="bold"
+                /></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/fee_etx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter course fee"
+                android:textSize="13sp"
+                android:textColorHint="@color/font_faded"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Add course"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="course_added"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Update"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:onClick="course_updated"
+                android:background="@color/Button"
+                android:textColor="@color/font"
+                android:shadowColor="@color/Button_shadow"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="delete"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:onClick="course_deleted"
+                android:background="@color/Button"
+                android:textColor="@color/font"
+                android:shadowColor="@color/Button_shadow"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".course_enrollment"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        >
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:text="tech explica"
+            android:textSize="70sp"
+            android:fontFamily="cursive"
+            android:layout_marginBottom="50dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Course"
+            android:textSize="25sp"
+            android:textColor="@color/font"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|top"
+            >
+
+            <Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="-10dp"
+            android:layout_gravity="right"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Name "
+                android:textSize="20sp"
+                android:textColor="@color/font"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textSize="20sp"
+                        android:textColor="@color/font"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Faculty"
+                        android:textSize="20sp"
+                        android:textColor="@color/font"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fee "
+                        android:textSize="20sp"
+                        android:textColor="@color/font"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/tc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="20sp"
+                            android:textColor="@color/font"
+                            android:fontFamily="sans-serif-condensed"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/td"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="20sp"
+                            android:textColor="@color/font"
+                            android:fontFamily="sans-serif-condensed"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/tf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="20sp"
+                            android:textColor="@color/font"
+                            android:fontFamily="sans-serif-condensed"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/tfe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="20sp"
+                            android:textColor="@color/font"
+                            android:fontFamily="sans-serif-condensed"
+
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Buy Course"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="buy_course"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Go back"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="back_button"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

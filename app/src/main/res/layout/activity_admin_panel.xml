@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_panel"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@color/background"
+    >
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin panel"
+                android:textSize="25sp"
+                android:textColor="@color/font"
+                android:textStyle="bold"
+                /></LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Add new course"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="new_course"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Enrolled students"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="enrolled_students"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Non enrolled students"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="non_enrolled_students"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="all courses"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:onClick="all_courses"
+            android:background="@color/Button"
+            android:textColor="@color/font"
+            android:shadowColor="@color/Button_shadow"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
